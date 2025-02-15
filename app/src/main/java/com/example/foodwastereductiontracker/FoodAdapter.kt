@@ -1,5 +1,6 @@
 package com.example.foodwastereductiontracker
 
+import android.annotation.SuppressLint
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -23,6 +24,7 @@ class FoodAdapter(private val foodItems: List<FoodItem>) :
         return ViewHolder(view)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val foodItem = foodItems[position]
         holder.foodName.text = foodItem.name
