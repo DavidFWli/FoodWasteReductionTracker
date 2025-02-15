@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
-        android:title="Home"
+        android:id="@+id/nav_home"
+        android:title="@string/home_title"
         android:icon="@drawable/ic_home" />
     <item
-        android:id="@+id/recipes"
-        android:title="Recipes"
+        android:id="@+id/nav_recipes"
+        android:title="@string/recipes_title"
         android:icon="@drawable/ic_recipe" />
     <item
-        android:id="@+id/stats"
-        android:title="Statistics"
+        android:id="@+id/nav_stats"
+        android:title="@string/stats_title"
         android:icon="@drawable/ic_chart" />
 </menu>

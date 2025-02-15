@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Food Waste Reduction Tracker</string>
+    <string name="food_image_description">Food Image</string>
+    <string name="user_profile_description">User Profile</string>
+    <string name="home_title">Home</string>
+    <string name="recipes_title">Recipes</string>
+    <string name="stats_title">Statistics</string>
+
 </resources>

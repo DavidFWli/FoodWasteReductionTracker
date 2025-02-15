@@ -68,13 +68,13 @@ fun FoodItemList(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun FoodItemCard(foodItem: FoodItem, modifier: Modifier = Modifier) {
+fun FoodItemCard(foodItem: FoodItem) {
     Card(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 8.dp),
         shape = RoundedCornerShape(8.dp),
-        elevation = CardDefaults.cardElevation(4.dp) // Fix here
+        elevation = CardDefaults.cardElevation(4.dp)
     ) {
         Row(
             modifier = Modifier
@@ -83,11 +83,8 @@ fun FoodItemCard(foodItem: FoodItem, modifier: Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(id = foodItem.imageResourceId),
-                contentDescription = foodItem.name,
-                modifier = Modifier
-                    .size(40.dp)
-                    .clip(CircleShape)
+                painter = painterResource(id = R.drawable.your_image),
+                contentDescription = "Your image description"
             )
             Spacer(modifier = Modifier.width(16.dp))
             Column {
